@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_register_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/back"
+        android:layout_margin="30dp"
+
+
+        />
+
+    <FrameLayout
+        android:focusable="false"
+        android:layout_width="400dp"
+        android:layout_height="410dp"
+        android:background="#ffffff"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/frameLayout"></FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="110dp"
+        >
+
+
+        <EditText
+            android:id="@+id/et_regist_name"
+            android:layout_below="@+id/et_name"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/login_name"
+            android:drawablePadding="8dp"
+            android:hint="@string/username" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_name"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/et_regist_pwd"
+            android:layout_below="@+id/et_name"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/login_pwd"
+            android:drawablePadding="8dp"
+            android:hint="@string/password" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ll_pwd"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:id="@+id/et_regist_email"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/regist_email"
+            android:drawablePadding="8dp"
+            android:hint="@string/e_amail" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:layout_below="@+id/ll_phone"
+        android:background="@drawable/login_background"
+        >
+       <RadioGroup
+           android:id="@+id/rg_regist"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="40dp"
+           >
+           <RadioButton
+               android:id="@+id/rb_male"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/male"
+               android:drawableLeft="@drawable/regist_rb"
+               android:drawablePadding="12dp"
+               android:textColor="#000000"
+               android:button="@null"
+               />
+
+           <RadioButton
+               android:id="@+id/rb_female"
+               android:layout_marginLeft="50dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/female"
+               android:textColor="#000000"
+               android:drawableLeft="@drawable/regist_rb"
+               android:drawablePadding="12dp"
+               android:button="@null"
+               />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_agenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ll_sex"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/et_regist_age"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/regist_age"
+            android:drawablePadding="8dp"
+            android:hint="@string/age" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/ll_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:id="@+id/et_regist_phone"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/regist_email"
+            android:drawablePadding="8dp"
+            android:hint="@string/phone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonsign"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@id/ll_agenumber"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="@string/sign_in_and_login"
+        />
+
+
+
+</RelativeLayout>

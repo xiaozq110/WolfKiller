@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HiTravel2.0</string>
+
+
+    <!-- 登录页面-->
+    <string name="login_in">登  录</string>
+    <string name="sign_in_and_login">注册并登录</string>
+    <string name="sign_in">注册</string>
+    <string name="remember_name">记住密码</string>
+    <string name="login_out">退出登录</string>
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="e_amail">邮箱</string>
+    <string name="phone">电话号码</string>
+    <string name="age">年龄</string>
+    <string name="sex">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_backg"
+    tools:context="com.roome.android.hitravel20.LoginActivity">
+
+    <FrameLayout
+        android:focusable="false"
+        android:layout_width="400dp"
+        android:layout_height="255dp"
+        android:background="#ffffff"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/frameLayout"></FrameLayout>
+
+
+
+
+<LinearLayout
+    android:id="@+id/ll_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="230dp"
+    >
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_below="@+id/et_name"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="match_parent"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_background"
+        android:padding="11dp"
+        android:drawableLeft="@drawable/login_name"
+        android:drawablePadding="8dp"
+        android:hint="@string/username" />
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/ll_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/ll_name"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal"
+    >
+
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_below="@+id/et_name"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="match_parent"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_background"
+        android:padding="11dp"
+        android:drawableLeft="@drawable/login_pwd"
+        android:drawablePadding="8dp"
+        android:hint="@string/password" />
+
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F79C64"
+        android:textSize="14sp"
+        android:padding="2dp"
+        android:layout_below="@+id/ll_pwd"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="70dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/sign_in"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_remember_pwd"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:textColor="#F79C64"
+        android:textSize="14sp"
+        android:layout_below="@+id/ll_pwd"
+        android:button="@null"
+        android:drawableLeft="@drawable/login_cb"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/remember_name"
+        />
+
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_button"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/cb_remember_pwd"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:text="@string/login_in"
+        />
+
+
+
+
+</RelativeLayout>

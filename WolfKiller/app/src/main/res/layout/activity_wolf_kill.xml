@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_wolf_kill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择人数："
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        />
+    <Spinner
+        android:id="@+id/sp_population"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:dropDownWidth="50dp"
+        android:layout_width="30dp"
+        android:entries="@array/people"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_population"
+        />
+
+    <GridLayout
+        android:id="@+id/gl_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_population"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:rowCount="4"
+        android:columnCount="3"
+        android:alignmentMode="alignBounds"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/gl_v1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/gl_v2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="25dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/gl_v3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="25dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/gl_v4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:layout_marginBottom="25dp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/gl_v5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:layout_marginBottom="30dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/gl_v6"
+            android:layout_width="73dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/gl_v7"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/gl_v8"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:layout_marginBottom="30dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/gl_v9"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:layout_marginBottom="25dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/gl_v10"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:layout_marginBottom="25dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/gl_v11"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:layout_marginRight="25dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/gl_v12"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/wolfkill"
+            android:visibility="invisible"
+            />
+    </GridLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_toGod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入法官视角"
+        android:layout_below="@+id/gl_card"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_wash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="洗牌"
+        android:layout_below="@+id/gl_card"
+        android:layout_toRightOf="@+id/btn_toGod"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_toGod"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:text="提示：长按卡牌可查询角色（限法官权限）"
+        />
+
+
+</RelativeLayout>
